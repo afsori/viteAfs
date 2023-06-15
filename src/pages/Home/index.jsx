@@ -11,9 +11,11 @@ function Home() {
 		<div>
 			<LayoutHomePage>
 				<h1>home page</h1>
-				<Link to="/">Home page</Link>
-				<Link to="/about">about</Link>
-				<Link to="/chart">chart</Link>
+				<div>
+					<Link style={{marginRight:'10px'}} to="/">Home page</Link>
+					<Link style={{marginRight:'10px'}} to="/about">About Page</Link>
+					<Link style={{marginRight:'10px'}} to="/blog">Blog App Page</Link>
+				</div>
 				<Routes>
 						<Route path="/chart" exact={true} element={<Chart />} />
 				</Routes>
