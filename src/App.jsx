@@ -1,30 +1,39 @@
 // import { useState } from 'react'
 import "./App.css";
 import {
-	createBrowserRouter,
-	// Link,
-	// Route,
-	RouterProvider,
-	// Routes,
+	Route,
+	BrowserRouter,
+	Routes,
 } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import BlogApp from "./pages/BlogApp";
 import ErrorPage from "./pages/ErrorPage";
 import UserApp from "./pages/UserApp";
+import LayoutHomePage from "./layout/home";
+import Chart from "./pages/Home/Chart";
+import LayoutBlogPage from './layout/LayoutBlogPage'
+import BlogUser from "./pages/BlogApp/BlogUser";
 
-// 3️⃣ Router singleton created
-const router = createBrowserRouter([
-	{ path: "/", Component: Home },
-	{ path: "about", Component: About },
-	{ path: "blog", Component: BlogApp },
-	{ path: "user", Component: UserApp },
-	{ path: "*", Component: ErrorPage },
-]);
 
-// 4️⃣ RouterProvider added
 export default function App() {
-	return <RouterProvider router={router} />;
+	return (
+		<BrowserRouter>
+      <Routes>
+				<Route element={<LayoutHomePage />}>
+					<Route path="/" element={<Home />} />
+					<Route path="/chart" element={<Chart />} />
+				</Route>
+				<Route element={<LayoutBlogPage />}>
+					<Route path="/blog" element={<BlogApp />} />
+					<Route path="/blog/users" element={<BlogUser />} />
+				</Route>
+        <Route path="/users/*" element={<UserApp />} />
+        <Route path="/about/*" element={<About />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </BrowserRouter>
+	)
 }
 
 // function Root() {

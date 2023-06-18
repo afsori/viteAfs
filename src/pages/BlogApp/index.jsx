@@ -8,7 +8,7 @@ function BlogApp() {
 			<h1>BlogApp</h1>
 			<Link to="/">Home page</Link>
 			<Link to="/blog">BlogApp</Link>
-			<Link to="/users">UserApp</Link>
+			<Link to="/blog/users">Blog User</Link>
 		</div>
 	);
 }

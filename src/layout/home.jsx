@@ -1,13 +1,15 @@
 // import React from 'react'
 // import PropTypes from 'prop-types'
 
+import { Outlet } from "react-router-dom";
+
 
 // eslint-disable-next-line react/prop-types
-function LayoutHomePage({children}) {
+function LayoutHomePage() {
   return (
     <div>
       <h3>INI LAYOUT HOME PAGE</h3>
-      {children}
+      <Outlet />
       </div>
   )
 }
