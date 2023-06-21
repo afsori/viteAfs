@@ -1,0 +1,23 @@
+#Hero {
+    padding-top: 3rem;
+  }
+  
+  .row {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .card {
+    width: 500px;
+    padding-right: 40px;
+    text-align: left;
+  }
+
+
+  img {
+    width: 400px;
+    height: 240px;
+    padding-left: 5rem;
+  }

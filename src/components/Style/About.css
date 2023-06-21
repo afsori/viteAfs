@@ -1,0 +1,24 @@
+#About {
+    text-align: left;
+}
+
+.rows {
+    display: flex;
+    padding-top: 4rem;
+}
+
+.cols {
+    padding: 4rem;
+}
+
+.rows .card {
+    text-align: justify;
+}
+
+.cols img {
+    padding-left: 2rem;
+}
+
+.Dental {
+    display: flex;
+}
