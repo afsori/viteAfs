@@ -5,7 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import About from "../About/About";
 import Services from "../Services/Services";
 
-function Home() {
+function AboutIndex() {
     return (
         <body>
             <div className="Home">
@@ -23,4 +23,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default AboutIndex;
