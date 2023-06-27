@@ -1,0 +1,74 @@
+.coll {
+    width: 300px;
+    text-align: left;
+    color: black;
+}
+
+.ContaineR {
+    display: flex;
+}
+
+.coll button {
+    width: 70px;
+    padding: 3px;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+.coll img {
+    padding: 0;
+    width: 300px;
+}
+
+.Cardd {
+    padding-left: 7rem;
+    padding-top: 5rem;
+    position: relative;
+}
+ 
+.gigi {
+    display: flex;
+}
+
+.Gambar {
+    position: relative;
+    padding: 20px;
+}
+
+.Gambar :hover {
+    box-shadow: 5px 5px 0px 0px;
+    transform: scale(1.2);
+  }
+.Gambar p {
+    position: absolute;
+}
+.Gambar img {
+    padding: 2rem;
+    display: flex;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+}
+
+.gg2 {
+    position: absolute;
+    top: 90px;
+    color: white;
+    padding-left: 7px;
+}
+
+.lorem {
+    text-align: left;
+    position: absolute;
+    font-size: 10px;
+    top: 125px;
+    color: white;
+    padding-left: 7px;
+}
+
+h4 {
+    position: absolute;
+    top: 120px;
+    padding-left: 7px;
+    color: white;
+}

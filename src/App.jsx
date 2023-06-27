@@ -5,7 +5,7 @@ import {
 	BrowserRouter,
 	Routes,
 } from "react-router-dom";
-import About from "./pages/About";
+// import About from "./pages/About";
 import Home from "./pages/Home";
 import BlogApp from "./pages/BlogApp";
 import ErrorPage from "./pages/ErrorPage";
@@ -14,6 +14,7 @@ import LayoutHomePage from "./layout/home";
 import Chart from "./pages/Home/Chart";
 import LayoutBlogPage from './layout/LayoutBlogPage'
 import BlogUser from "./pages/BlogApp/BlogUser";
+import AboutIndex from "./components/AboutIndex/AboutIndex";
 
 
 export default function App() {
@@ -29,7 +30,7 @@ export default function App() {
 					<Route path="/blog/users" element={<BlogUser />} />
 				</Route>
         <Route path="/users/*" element={<UserApp />} />
-        <Route path="/about/*" element={<About />} />
+        <Route path="/about/*" element={<AboutIndex />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
